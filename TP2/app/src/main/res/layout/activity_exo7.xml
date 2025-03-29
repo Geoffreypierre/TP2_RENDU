@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="tp2.Exercice_7.Exo7">
+
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:text="Ma Position"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="144dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="117dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Longitude : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="148dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Latitude : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="325dp" android:layout_height="450dp"
+        android:id="@+id/maps" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintHorizontal_bias="0.489">
+    </androidx.fragment.app.FragmentContainerView>
+
+    <Button
+        android:text="Retour"
+        android:onClick="RetourExo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/RetourExo6"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

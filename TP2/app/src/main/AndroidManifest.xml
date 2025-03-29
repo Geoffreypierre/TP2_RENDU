@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tp2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TP2">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAc7OScq1GlaEHfUFrAFpDxFvQaELbRp4c"/>
+        <activity
+            android:name="tp2.Menu.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tp2.Exercice_1.Exo1"
+            android:exported="true"/>
+        <activity
+            android:name="tp2.Exercice_2.Exo2"
+            android:exported="true"/>
+        <activity
+            android:name="tp2.Exercice_3.Exo3"
+            android:exported="true"/>
+        <activity
+            android:name="tp2.Exercice_4.Exo4"
+            android:exported="true"/>
+        <activity
+            android:name="tp2.Exercice_5.Exo5"
+            android:exported="true"/>
+        <activity
+            android:name="tp2.Exercice_6.ExoProximiter"
+            android:exported="true"/>
+        <activity
+            android:name="tp2.Exercice_7.Exo7"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>
